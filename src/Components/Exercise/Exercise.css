@@ -4,13 +4,17 @@
 }
 
 .game-list{
-    background-color: aliceblue;
-    padding-top: 50px;
+    background-color: rgb(205, 228, 246);
+    padding-top: 30px;
     padding-left: 20px;
+    margin-right: 20px;
 }
 
 .game-cart{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 5px;
+}
+
+.game-break{
 }
