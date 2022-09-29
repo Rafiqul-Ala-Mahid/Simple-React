@@ -8,6 +8,7 @@ const Cart = ({ cart }) => {
     }
     return (
         <div>
+            <h1>CSE</h1>
             <h3>Rafiqul Ala Mahid</h3>
             <h4>Developer</h4>
             <p>Favourite Games: </p>
