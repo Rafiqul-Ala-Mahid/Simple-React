@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Game from '../Game/Game';
 import './Exercise.css';
 
 const Exercise = () => {
     const [games, setGames] = useState([])
+    const [cart, setCart]=useState([])
     
     useEffect(() => {
         fetch('products.json')
@@ -11,8 +13,10 @@ const Exercise = () => {
             .then(data => setGames(data))
         
     }, [])
-    const handleAddToList = (games) => {
-        console.log(games)
+    const handleAddToList = (game) => {
+        console.log(game.time)
+        const newCart = [...cart, game]
+        setCart(newCart)
     }
     return (
         <div className='container'>
@@ -30,16 +34,7 @@ const Exercise = () => {
                 </div>
             </div>
             <div className='gameBreak'>
-                <h3>CSE</h3>
-                <div>
-                    <h3>Exercise Details</h3>
-                    <div>
-                        <h4>Exercise time</h4>
-                    </div>
-                    <div>
-                        <h4>Break time</h4>
-                    </div>
-                </div>
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     );

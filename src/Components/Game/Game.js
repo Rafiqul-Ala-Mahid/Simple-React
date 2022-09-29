@@ -1,8 +1,8 @@
 import React from 'react';
 import './Game.css'
 const Game = (props) => {
-    const { handleAddToList } = props.game
-    const { name, img, details, age, time } = props.game
+    const { handleAddToList,game } = props
+    const { name, img, details, age, time } = game
     return (
         <div className='element'>
             <img src={img} alt="" />
@@ -10,7 +10,7 @@ const Game = (props) => {
             <p>{details}</p>
             <h5>For Age: {age}</h5>
             <h5>Time required: {time}s</h5>
-            <button onClick={()=>props.handleAddToList(props.game)} className='btn'>
+            <button onClick={()=>handleAddToList(game)} className='btn'>
                 <p>Add to list</p>
             </button>
         </div>
