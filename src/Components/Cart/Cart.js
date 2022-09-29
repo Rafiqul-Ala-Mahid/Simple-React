@@ -14,17 +14,17 @@ const Cart = ({ cart }) => {
             <p>Cricket, Football, Chess, Tennis</p>
             <h3>Add some break</h3>
             <div className="cart-display">
-                <button>
-                    <p><span>10</span>s</p>
+                <button className='btn2'>
+                    <p><span className='value'>10</span>s</p>
                 </button>
-                <button>
-                    <p><span>20</span>s</p>
+                <button className='btn2'>
+                    <p><span className='value'>20</span>s</p>
                 </button>
-                <button>
-                    <p><span>30</span>s</p>
+                <button className='btn2'>
+                    <p><span className='value'>30</span>s</p>
                 </button>
-                <button>
-                    <p><span>40</span>s</p>
+                <button className='btn2'>
+                    <p><span className='value'>40</span>s</p>
                 </button>
             </div>
                 <div>
